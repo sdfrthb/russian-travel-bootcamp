@@ -1,0 +1,6 @@
+.places__place {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 40px;
+}

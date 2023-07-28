@@ -1,0 +1,13 @@
+.header__lang-links {
+  list-style-type: none;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.16667;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  column-gap: 18px;
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,7 @@
+.places__website {
+  max-width: 456px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  align-self: flex-end;
+}
