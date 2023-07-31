@@ -1,4 +1,24 @@
 .intro {
   max-width: 690px;
-  padding: 92px 442px 0 148px;
+  padding-top: 92px;
+  padding-left: 148px;
+}
+
+@media screen and (max-width: 1024px) {
+  .intro {
+    padding-left: calc((25 / 64) * 100vw - 352px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .intro {
+    padding: 88px calc((3 / 32) * 100vw - 48px) 0;
+    max-width: 720px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .intro {
+    padding: 64px calc((1 / 56) * 100vw + (72 / 7) * 1px) 0;
+  }
 }

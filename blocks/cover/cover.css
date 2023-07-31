@@ -1,11 +1,24 @@
+/*
+расчет ширины
+разница размеров экрана: 1280-1024=256
+коэф для полей: 2*48/256
+разница текущего размера экрана и минимального: 100%-1024
+размер полей: (100%-1024)*коэф
+
+высота=ширина * коэф, равный отношению ширины к высоте (1.6) (обратная велична 0.625)
+
+padding из системы  лин ур, где x ширина экрана
+*/
+
 .cover {
   max-width: 1184px;
-  min-height: 740px;
+  width: calc(100vw - (max(100vw, 1024px) - 1024px) * (2 * 48 / 256));
+  height: calc(0.625 * calc(100vw - (max(100vw, 1024px) - 1024px) * (2 * 48 / 256)));
   margin: 0 auto;
-  padding-top: 245px;
+  padding-top: calc((25 / 128) * 100vw - 5px);
   color: #fff;
   text-decoration: none;
-  background-image: url(../../images/cover.jpg);
+  background-image: url(../../images/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: block;
@@ -27,3 +40,15 @@
 .cover:hover:before{
    opacity: 0.8;
 }
+
+@media screen and (max-width: 1024px) {
+  .cover {
+    padding-top: calc((5 / 16) * 100vw - 125px);
+  }
+}
+@media screen and (max-width: 768px) {
+  .cover {
+    padding-top: calc((41 / 224) * 100vw - 179px / 7);
+  }
+}
+

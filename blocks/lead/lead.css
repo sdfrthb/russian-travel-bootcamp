@@ -2,4 +2,19 @@
   margin: 0 auto;
   padding-top: 56px;
   max-width: 984px;
+  width: calc(100vw - (((25/32) * 100vw) - 704px));
 }
+
+@media screen and (max-width: 1024px) {
+  .lead {
+    width: calc(100vw - (max(100vw, 768px) - 768px) * (2 * 48 / (256)));
+    padding-top: 48px;
+  }
+}
+
+/*
+1 ширина = ширина экрана - отсупы f(x) = ax + b
+2 отступы из пропорции
+*/
+
+

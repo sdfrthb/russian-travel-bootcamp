@@ -1,8 +1,30 @@
 .places {
   margin: 0 auto;
   padding: 92px 0;
-  max-width: 984px;
   display: flex;
   flex-direction: column;
   row-gap: 80px;
+  max-width: 984px;
+  width: calc(100vw - (((25/32) * 100vw) - 704px));
 }
+
+@media screen and (max-width: 1024px) {
+  .places {
+    width: calc(100vw - (((3/16) * 100vw) - 96px));
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .places {
+    padding: 88px 0 90px;
+    width: calc(100vw - (((3/28) * 100vw) - (240 / 7) * 1px));
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .places {
+    padding: 64px 0 66px;
+  }
+}
+
+

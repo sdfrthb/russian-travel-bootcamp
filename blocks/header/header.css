@@ -3,5 +3,19 @@
   display: flex;
   max-width: 1184px;
   justify-content: space-between;
-  margin: 0 auto;
+  margin: 0 48px;
 }
+
+@media screen and (max-width: 1024px) {
+  .header {
+    margin: 0 calc(((3 / 16) * 100vw - 96px)/2);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    margin: 0 calc(((1 / 28) * 100vw + (144 / 7) * 1px)/2);
+    padding-top: 16px;
+  }
+}
+

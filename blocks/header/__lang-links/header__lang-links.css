@@ -11,3 +11,11 @@
   margin: 0;
   padding: 0;
 }
+
+@media screen and (max-width: 500px) {
+  .header__lang-links {
+    max-width: 288px;
+    font-size: 18px;
+    line-height: 1.11111;
+  }
+}
