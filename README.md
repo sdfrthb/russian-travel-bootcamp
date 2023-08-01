@@ -16,4 +16,5 @@
 * Отзывчивая верстка (Desktop-First)
 ---
 ## Cсылка на проект
+[Перейти](https://sdfrthb.github.io/russian-travel-bootcamp/index.html)
 
