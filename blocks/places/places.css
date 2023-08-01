@@ -18,12 +18,14 @@
   .places {
     padding: 88px 0 90px;
     width: calc(100vw - (((3/28) * 100vw) - (240 / 7) * 1px));
+    row-gap: 73px;
   }
 }
 
 @media screen and (max-width: 500px) {
   .places {
     padding: 64px 0 66px;
+    row-gap: 50px;
   }
 }
 
