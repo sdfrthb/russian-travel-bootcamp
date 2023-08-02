@@ -1,0 +1,55 @@
+/*
+расчет ширины
+разница размеров экрана: 1280-1024=256
+коэф для полей: 2*48/256
+разница текущего размера экрана и минимального: 100%-1024
+размер полей: (100%-1024)*коэф
+
+высота=ширина * коэф, равный отношению ширины к высоте (1.6) (обратная велична 0.625)
+
+padding из системы  лин ур, где x ширина экрана
+*/
+
+.cover__link {
+  padding-top: min(calc((25 / 128) * 100vw - 5px), 245px);
+  width: 100%;
+  min-height: calc(0.625 * calc(100vw - (max(100vw, 1024px) - 1024px) * (2 * 48 / 256)));
+  max-height: 740px;
+  color: #fff;
+  text-decoration: none;
+  background-image: url(../../../images/background.jpg);
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: block;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+}
+
+.cover__link:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  background-color: #2A2C2F;
+}
+
+.cover__link:hover:before{
+   opacity: 0.8;
+}
+
+@media screen and (max-width: 1024px) {
+  .cover__link {
+    padding-top: calc((5 / 16) * 100vw - 125px);
+  }
+}
+@media screen and (max-width: 768px) {
+  .cover__link {
+    padding-top: calc((41 / 224) * 100vw - 179px / 7);
+  }
+}
