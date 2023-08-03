@@ -5,7 +5,7 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 1.22222;
-  margin: 32px auto 0;
+  margin: 32px 0 0;
   z-index: 2;
   position: relative;
 }
@@ -15,6 +15,6 @@
     max-width: 288px;
     font-size: 14px;
     line-height: 1.14286;
-    margin: 16px auto 0;
+    margin: 16px 0 0;
   }
 }
