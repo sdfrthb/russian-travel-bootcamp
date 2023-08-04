@@ -12,15 +12,12 @@ padding из системы  лин ур, где x ширина экрана
 
 .cover__link {
   width: 100%;
-  /* min-height: 740px; */
-  /* min-height: calc(0.625 * calc(100vw - (max(100vw, 1024px) - 1024px) * (2 * 48 / 256))); */
+  min-height: 740px;
   color: #fff;
   text-decoration: none;
   background-image: url(../../../images/background.jpg);
-  object-fit: cover;
   background-repeat: no-repeat;
   background-position: center;
-  display: block;
   box-sizing: border-box;
   position: relative;
   z-index: 1;
@@ -43,5 +40,11 @@ padding из системы  лин ур, где x ширина экрана
 
 .cover__link:hover:before{
    opacity: 0.8;
+}
+
+@media screen and (max-width:1024px) {
+  .cover__link {
+    min-height: calc(0.625 * calc(100vw - (max(100vw, 1024px) - 1024px) * (2 * 48 / 256)));
+  }
 }
 

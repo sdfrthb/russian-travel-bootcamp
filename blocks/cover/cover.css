@@ -12,8 +12,12 @@ padding из системы  лин ур, где x ширина экрана
 
 .cover {
   max-width: 1184px;
-  width: calc(100vw - (max(100vw, 1024px) - 1024px) * (2 * 48 / 256));
+  width: calc(100% - (max(100%, 1024px) - 1024px) * (2 * 48 / 256));
   margin: 0 auto;
 }
 
-
+@media screen and (max-width:1024px) {
+  .cover {
+    width: 100%;
+  }
+}
