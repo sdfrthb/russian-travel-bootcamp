@@ -1,0 +1,6 @@
+.emblems__item {
+  display: flex;
+  max-width: 208px;
+  flex-direction: column;
+  row-gap: 35px;
+}

@@ -1,0 +1,6 @@
+.comments__container {
+  width: 100%;
+  display: flex;
+  column-gap: 19px;
+  margin-top: 72px;
+}
