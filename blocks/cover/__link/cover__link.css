@@ -19,6 +19,7 @@ padding из системы  лин ур, где x ширина экрана
   background-repeat: no-repeat;
   background-position: center;
   box-sizing: border-box;
+  background-size: cover;
   position: relative;
   z-index: 1;
   display: flex;

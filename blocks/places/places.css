@@ -26,6 +26,7 @@
   .places {
     padding: 64px 0 66px;
     row-gap: 50px;
+    width: 100%;
   }
 }
 
